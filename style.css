@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: rgb(209, 184, 184);
+
+}
+.gameContainer{
+    background-image: url(./bg.png);
+    background-repeat: no-repeat;
+    background-size:100vw 100vh ;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    
+
+
+}
+.gameOver{
+    visibility: hidden;
+    top: 30%;
+    position:absolute;
+    font-size: 53px;
+    left: 43%;
+    text-align: center;
+    visibility: hidden;
+    font-family: sans-serif;
+
+}
+
+.pika{
+    background-image: url(./abbe28a943ed44fcd98452687f7c46c9.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    width: 130px;
+    height: 100px;
+
+}
+.loose{
+    background-image: url(./images-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    width: 130px;
+    height: 100px;
+    visibility: hidden;
+
+
+}
+#scoreCont{
+    position: relative;
+    left: 23px;
+    top: 23px;
+    border: 2px solid black;
+    padding: 10px;
+    font-family: sans-serif;
+    width: 122px;
+    color: rgb(183, 68, 68);
+}
+.obstacale{
+    background-image: url(./135733b07291badc8cb3c083d4fd90b0.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 210px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+   
+
+}
+.animatePika{
+    animation: pika 0.6s linear;
+}
+@keyframes pika{
+    0%{
+        bottom: 0;
+
+
+    }
+    50%{
+        bottom: 400px;
+       
+    }
+    75%{
+        bottom: 280px;
+    }
+    100%{
+        bottom: 0;
+       
+
+    }
+}
+.obstacaleAni{
+    animation: obstacleAni 5s linear infinite ;
+    
+}
+@keyframes obstacleAni{
+    0%{
+        left: 100vw;
+
+    }
+    50%{
+
+
+    }
+    100%{
+        left: -10vw;
+
+    }
+}
